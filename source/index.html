@@ -1,88 +1,263 @@
 <!doctype html>
 <html lang="ru">
 <head class="page">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PINK</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PINK</title>
 </head>
 <body class="page-body">
-    <header class="page-header">
-        <div class="container">
-            <div class="logo"></div>
+<header class="page-header">
+  <div class="container">
+    <div class="logo"></div>
 
-            <ul class="top-nav">
-                <li class="top-nav__item">Главная</li>
-                <li class="top-nav__item">Фотографии</li>
-                <li class="top-nav__item">Конкурс</li>
-                <li class="top-nav__item">HTML Academy</li>
-            </ul>
+    <ul class="main-nav">
+      <li class="main-nav__item">Главная</li>
+      <li class="main-nav__item">Фотографии</li>
+      <li class="main-nav__item">Конкурс</li>
+      <li class="main-nav__item">HTML Academy</li>
+    </ul>
 
-            <button class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+    <button class="nav-toggle">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </div>
+</header>
 
-    <main class="page-content">
-        <h1 class="visually-hidden">Сайт приложения PINK</h1>
+<main class="page-content">
+  <h1 class="visually-hidden">Сайт приложения PINK</h1>
 
-        <section class="hero">
-            <h2 class="visually-hidden">Приложение PINK!</h2>
-            <div class="container">
-                <p class="hero-description__action">Взгляните на жизнь иначе!</p>
+  <section class="hero">
+    <h2 class="visually-hidden">Приложение PINK!</h2>
 
-                <div class="hero-description">
-                    <a href="#" class="hero-description__button">Скачать приложение</a>
+    <div class="container">
+      <p class="hero-description__action">Взгляните на жизнь иначе!</p>
 
-                    <ul class="hero-platforms">
-                        <li class="hero-platforms__item"><img src="" alt=""></li>
-                        <li class="hero-platforms__item"><img src="" alt=""></li>
-                        <li class="hero-platforms__item"><img src="" alt=""></li>
-                    </ul>
+      <div class="hero-description">
+        <a href="#" class="hero-description__button">Скачать приложение</a>
 
-                    <p class="hero-description__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-                </div>
+        <ul class="hero-platforms">
+          <li class="hero-platforms__item hero-platforms__item--iphone">
+            <img src="https://via.placeholder.com/150x150" alt="iphone">
+          </li>
 
-                <img src="https://via.placeholder.com/150x150" alt="Картинка рука" class="hero__heand">
-            </div>
-        </section>
+          <li class="hero-platforms__item hero-platforms__item--android">
+            <img src="https://via.placeholder.com/150x150" alt="android">
+          </li>
 
-        <section class="advantages">
-            <h2 class="visually-hidden">Приемущества приложения PINK</h2>
+          <li class="hero-platforms__item hero-platforms__item--windows">
+            <img src="https://via.placeholder.com/150x150" alt="windows">
+          </li>
+        </ul>
 
-            <p class="advantages__text">Устали от серости мегаполиса?</p>
+        <p class="hero-description__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
 
-            <p class="advantages__text">Нам есть, что вам предложить!</p>
+      <img src="https://via.placeholder.com/150x150" alt="Картинка рука" class="hero__heand">
+    </div>
+  </section>
 
-            <ul class="advantages-list">
-                <li class="advantages-list__item advantage">
-                    <b class="advantage__heading">>Поднимает настроение</b>
-                    <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </li>
-                <li class="advantages-list__item advantage">
-                    <b class="advantage__heading">Меняет мир вокруг</b>
-                    <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li class="advantages-list__item advantage">
-                    <b class="advantage__heading">>Заводит новых друзей</b>
-                    <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-            </ul>
+  <section class="advantages">
+    <h2 class="visually-hidden">Приемущества приложения PINK</h2>
 
-          <img src="https://via.placeholder.com/150x150" alt="Картинка телефон" class="advantages__phone-img">
-        </section>
+    <div class="container">
+      <p class="advantages__text">Устали от серости мегаполиса?</p>
 
-        <section class="reviews">
+      <p class="advantages__text">Нам есть, что вам предложить!</p>
 
-        </section>
-    </main>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <b class="advantages__heading">>Поднимает настроение</b>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+            кликов!</p>
+        </li>
 
-    <footer class="page-footer">
+        <li class="advantages__item">
+          <b class="advantages__heading">Меняет мир вокруг</b>
+          <p class="advantages__heading">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
 
-    </footer>
+        <li class="advantages__item">
+          <b class="advantages__heading">>Заводит новых друзей</b>
+          <p class="advantages__heading">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
+    </div>
+
+    <img src="https://via.placeholder.com/150x150" alt="Картинка телефон" class="advantages__phone-img">
+  </section>
+
+  <section class="reviews">
+    <h2 class="visually-hidden">Отзывы</h2>
+
+    <div class="container slider">
+      <ul class="reviews__list slider__list">
+        <li class="reviews__item slider__item">
+          <b class="reviews__author">Николай Петров</b>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+
+        <li class="reviews__item slider__item">
+          <b class="reviews__author">Николай Петров</b>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+
+        <li class="reviews__item slider__item">
+          <b class="reviews__author">Николай Петров</b>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+      </ul>
+
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--active">1</button>
+        <button class="slider__toggle">2</button>
+        <button class="slider__toggle">3</button>
+      </p>
+    </div>
+  </section>
+
+  <section class="tariffs">
+    <h2 class="visually-hidden">Тарифы приложения PINK</h2>
+
+    <div class="container slider">
+      <ul class="tariffs__list slider__list">
+        <li class="tarrifs__item slider__item">
+          <div class="tariffs__heading">
+            <b class="tarrifs__name">база</b>
+            <p class="tarrifs__price">1,99 USD</p>
+          </div>
+
+          <ul class="tariffs__features-list">
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Розовый фильтр</p>
+              <p class="tariffs__features-icon tariffs__features-icon--true"></p>
+            </li>
+
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Смайлики</p>
+              <p class="tariffs__features-icon tariffs__features-icon--true"></p>
+            </li>
+
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Комментарии</p>
+              <p class="tariffs__features-icon tariffs__features-icon--false"></p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tarrifs__item slider__item">
+          <div class="tariffs__heading">
+            <b class="tarrifs__name">стандарт</b>
+            <p class="tarrifs__price">3,99 USD</p>
+          </div>
+
+          <ul class="tariffs__features-list">
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Розовый фильтр</p>
+              <p class="tariffs__features-icon tariffs__features-icon--true"></p>
+            </li>
+
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Смайлики</p>
+              <p class="tariffs__features-icon tariffs__features-icon--true"></p>
+            </li>
+
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Комментарии</p>
+              <p class="tariffs__features-icon tariffs__features-icon--false"></p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tarrifs__item slider__item">
+          <div class="tariffs__heading">
+            <b class="tarrifs__name">анлим</b>
+            <p class="tarrifs__price">9,99 USD</p>
+          </div>
+
+          <ul class="tariffs__features-list">
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Розовый фильтр</p>
+              <p class="tariffs__features-icon tariffs__features-icon--true"></p>
+            </li>
+
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Смайлики</p>
+              <p class="tariffs__features-icon tariffs__features-icon--true"></p>
+            </li>
+
+            <li class="tariffs__features-item">
+              <p class="tariffs__features-name">Комментарии</p>
+              <p class="tariffs__features-icon tariffs__features-icon--false"></p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="tarrifs__toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--active">1</button>
+        <button class="slider__toggle">2</button>
+        <button class="slider__toggle">3</button>
+      </p>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+
+    <div class="container">
+      <p class="contacts__text">
+        Остались вопросы?<br>
+        Свяжитесь с нами!
+      </p>
+
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <b class="contacts__type">Звоните:</b>
+          <a href="tel:+78125556666" class="contacts__link">+7 (812) 555-66-66</a>
+        </li>
+
+        <li class="contacts__item">
+          <b class="contacts__type">Пишите:</b>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+        </li>
+
+        <li class="contacts__item">
+          <b class="contacts__type">Приезжайте в гости:</b>
+          <a href="#" class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+        </li>
+      </ul>
+
+      <div class="contacts__map"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="footer__logo"></div>
+
+  <ul class="footer-socials">
+    <li class="footer-socials__item footer-socials__item--twitter">
+      <img src="https://via.placeholder.com/150x150" alt="twitter">
+    </li>
+    <li class="footer-socials__item footer-socials__item--facebook">
+      <img src="https://via.placeholder.com/150x150" alt="facebook">
+    </li>
+    <li class="footer-socials__item footer-socials__item--youtube">
+      <img src="https://via.placeholder.com/150x150" alt="youtube">
+    </li>
+  </ul>
+
+  <div class="footer__copyrights">
+    <p class="footer__copyrights-text"></p>
+    <img src="https://via.placeholder.com/150x150" alt="Academy" class="footer__copyrights-img">
+  </div>
+</footer>
 </body>
 </html>
