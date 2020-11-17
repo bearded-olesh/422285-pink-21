@@ -10,7 +10,7 @@
 <body class="page-body">
 <header class="page-header">
   <div class="container">
-    <div class="logo"></div>
+    <div class="logo"><svg></svg></div>
 
     <ul class="main-nav">
       <li class="main-nav__item">Главная</li>
@@ -26,27 +26,153 @@
 </header>
 
 <main class="page-content">
+  <h1 class="visually-hidden">Страница с форм обратной связи</h1>
 
+  <section class="hero">
+    <h2 class="visually-hidden">Блок с картинкой и текстом</h2>
+
+    <div class="container">
+      <p class="hero__text">Конкурс на самое езбашенное путешествие с Пинк</p>
+    </div>
+  </section>
+
+
+  <div class="container">
+    <p class="plain-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+  </div>
+
+  <section class="form-section">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+
+    <div class="container">
+      <form action="https://echo.htmlacademy.ru" class="form">
+        <fieldset class="form__personal-data">
+          <legend class="visually-hidden">Персональные данные</legend>
+
+          <ul class="personal-data__ist">
+            <li class="personal-data__item">
+              <label for="personal-data1">фамилия:</label>
+              <input type="text" id="personal-data1" name="surname" placeholder="Укажите фамилию *">
+            </li>
+
+            <li class="personal-data__item">
+              <label for="personal-data2">имя:</label>
+              <input type="text" id="personal-data2" name="name" placeholder="Введите ваше имя *">
+            </li>
+
+            <li class="personal-data__item">
+              <label for="personal-data3">отчество:</label>
+              <input type="text" id="personal-data3" name="patronymic" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__achievements">
+          <legend class="form__heading">Ваши безбашенные достижения в путешествии</legend>
+
+          <ul class="achievements__ist">
+            <li class="achievements__item">
+              <input type="checkbox" id="achievement1" name="selfie">
+              <label for="achievement1">Сделал селфи с акулой</label>
+            </li>
+
+            <li class="achievements__item">
+              <input type="checkbox" id="achievement2" name="burned-on-the-beach">
+              <label for="achievement2">Обгорел на пляже</label>
+            </li>
+
+            <li class="achievements__item">
+              <input type="checkbox" id="achievement3" name="chuck">
+              <label for="achievement3">Видел Чака Норриса</label>
+            </li>
+
+            <li class="achievements__item">
+              <input type="checkbox" id="achievement4" name="souvenirs">
+              <label for="achievement4">Накупил сувениров</label>
+            </li>
+
+            <li class="achievements__item">
+              <input type="checkbox" id="achievement5" name="held-the-tower">
+              <label for="achievement5">Удержал башню</label>
+            </li>
+
+            <li class="achievements__item">
+              <input type="checkbox" id="achievement6" name="trashed-the-hotel">
+              <label for="achievement6">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__personal-data">
+          <legend class="visually-hidden">Персональные данные</legend>
+
+          <ul class="personal-data__ist">
+            <li class="personal-data__item">
+              <label for="personal-data4">Номер телефона</label>
+              <input type="text" id="personal-data4" name="phone" placeholder="Номер, пожалуйста">
+            </li>
+
+            <li class="personal-data__item">
+              <label for="personal-data5">Адрес почты</label>
+              <input type="email" id="personal-data5" name="email" placeholder="Введите почту *">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__apps">
+          <legend class="form__heading">С каким приложением путешествовали?</legend>
+
+          <ul class="apps__ist">
+            <li class="apps__item">
+              <input type="radio" id="app1" name="apps" value="ios">
+              <label for="app1">Pink для iOS</label>
+            </li>
+
+            <li class="apps__item">
+              <input type="radio" id="app2" name="apps" value="android">
+              <label for="app2">Pink на Android</label>
+            </li>
+
+            <li class="apps__item">
+              <input type="radio" id="app3" name="apps" value="windows">
+              <label for="app3">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__emotions">
+          <legend class="form__heading">Опишите свои эмоции</legend>
+
+          <label class="visually-hidden" for="emotions"></label>
+          <textarea name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <button type="submit" class="button form__button">Отправить форму</button>
+
+        <p class="form__legend"><span>*</span> — обязательные поля</p>
+      </form>
+    </div>
+  </section>
 </main>
 
 <footer class="page-footer">
-  <div class="footer__logo"></div>
+  <div class="footer__logo"><svg></svg></div>
 
   <ul class="footer-socials">
-    <li class="footer-socials__item footer-socials__item--twitter">
-      <img src="https://via.placeholder.com/150x150" alt="twitter">
+    <li class="footer-socials__item">
+      <svg></svg>
     </li>
-    <li class="footer-socials__item footer-socials__item--facebook">
-      <img src="https://via.placeholder.com/150x150" alt="facebook">
+    <li class="footer-socials__item">
+      <svg></svg>
     </li>
-    <li class="footer-socials__item footer-socials__item--youtube">
-      <img src="https://via.placeholder.com/150x150" alt="youtube">
+    <li class="footer-socials__item">
+      <svg></svg>
     </li>
   </ul>
 
   <div class="footer__copyrights">
     <p class="footer__copyrights-text"></p>
-    <img src="https://via.placeholder.com/150x150" alt="Academy" class="footer__copyrights-img">
+    <svg></svg>
   </div>
 </footer>
 </body>
