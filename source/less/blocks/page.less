@@ -16,7 +16,19 @@
   background-color: @bg-header;
 }
 
+.page__header--open-menu {
+  background-color: @font-primary;
+  box-shadow: 0 1px 0 #000000;
+}
+
 .page__header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
 }

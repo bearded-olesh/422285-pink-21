@@ -9,9 +9,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-<header class="page__header">
+<header class="page__header page__header--open-menu">
   <div class="container page__header-container">
-    <div class="logo"><svg></svg></div>
+    <div class="logo">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width:660px)" srcset="img/logo-tablet.svg">
+        <img class="logo__img" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение PINK">
+      </picture>
+    </div>
 
     <ul class="main-nav">
       <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
