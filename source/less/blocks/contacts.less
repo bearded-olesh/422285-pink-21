@@ -1,8 +1,9 @@
 .contacts {
-  padding: 47px 0 74px;
+  padding: 47px 0 0;
 }
 
 .contacts__text {
+  margin: 0 0 45px;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -18,5 +19,16 @@
 
 .contacts__map {
   display: block;
+  overflow: hidden;
   height: 200px;
+  position: relative;
+  background: url("../img/map.jpg") no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: url("../img/triangle-white-map.svg");
+    display: block;
+    position: absolute;
+    top: -90px;
+  }
 }

@@ -1,0 +1,39 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+}
+
+.slider__item {
+  min-width: 100%;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.slider__toggle {
+  display: block;
+  padding: 0;
+  margin: 0 10px;
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bfc3c7;
+  font-size: 0;
+}
+
+.slider__toggle--active {
+  border: 3px solid @font-primary;
+  background-color: transparent;
+}
