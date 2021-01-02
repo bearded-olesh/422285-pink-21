@@ -1,5 +1,26 @@
 .advantages {
+  padding-top: 46px;
+}
+
+.advantages__heading {
+  padding-bottom: 50px;
+}
+
+.advantages__container {
   background-color: @bg-blocks;
+  background-image: url("../img/advantages-iphone.png");
+  background-repeat: no-repeat;
+  background-position: center 585px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantages-iphone-x2.png");
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 50px 0 325px;
+  text-align: center;
 }
 
 .advantages__item {
@@ -7,6 +28,7 @@
 }
 
 .advantages__text {
+  margin-top: 0;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;

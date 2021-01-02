@@ -1,8 +1,30 @@
 .hero {
   display: flex;
-  min-height: 462px;
-  background: url("../img/back-mobile.png") no-repeat center;
-  background-size: cover;
+  min-height: 733px;
+  padding-top: 60px;
+  position: relative;
+  background: url("../img/back-mobile.jpg") no-repeat top center;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-x2.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/back-tablet-x2.jpg");
+  }
+
+  @media (min-width: @desctop-width) {
+    background-image: url("../img/back-desktop.jpg");
+  }
+
+  @media (min-width: @desctop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop-x2.jpg");
+  }
 }
 
 .hero__text {
