@@ -1,17 +1,74 @@
+.advantage {
+  list-style: none;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 310px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+    padding-top: 363px;
+    padding-left: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+.advantage--sad {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantage-phone-sad.png");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-phone-sad-x2.png");
+  }
+}
+
+.advantage--normal {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantage-phone-normal.png");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-phone-normal-x2.png");
+  }
+}
+
+.advantage--happy {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantage-phone-happy.png");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-phone-happy-x2.png");
+  }
+}
+
 .advantage__heading {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  text-align: center;
   color: @font-heading;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .advantage__text {
-  margin: 24px 0 43px;
+  margin: 10px 0 36px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
   color: @font-primary;
+
+  @media (min-width: @desktop-width) {
+    margin: 21px 0 36px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

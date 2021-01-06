@@ -5,11 +5,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
   position: relative;
   border: 0;
   background-color: transparent;
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }
@@ -29,7 +30,7 @@
 }
 
 .page__header--open-menu .nav-toggle__stripe1 {
-  transform: rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .page__header--open-menu .nav-toggle__stripe2 {
@@ -37,5 +38,5 @@
 }
 
 .page__header--open-menu .nav-toggle__stripe3 {
-  transform: rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }

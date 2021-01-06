@@ -1,22 +1,57 @@
 .advantages {
   padding-top: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .advantages__heading {
   padding-bottom: 30px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .advantages__content {
+  overflow: hidden;
   background-color: @bg-blocks;
 }
 
 .advantages__container {
-  background-image: url("../img/advantages-iphone.png");
-  background-repeat: no-repeat;
-  background-position: center 585px;
+  position: relative;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/advantages-iphone-x2.png");
+  &::after {
+    content: url("../img/advantages-iphone-mobile.png");
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-resolution: 2dppx) {
+      content: url("../img/advantages-iphone-mobile-x2.png");
+    }
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/advantages-iphone-tablet.png");
+      bottom: -6px;
+      left: 0;
+      transform: translateX(0);
+    }
+
+    @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+      content: url("../img/advantages-iphone-tablet-x2.png");
+    }
+
+    @media (min-width: @desktop-width) {
+      content: "";
+    }
   }
 }
 
@@ -24,10 +59,16 @@
   margin: 0;
   padding: 70px 0 325px;
   text-align: center;
-}
 
-.advantages__item {
-  list-style: none;
+  @media (min-width: @tablet-width) {
+    padding: 70px 0 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 6px;
+  }
 }
 
 .advantages__text {
@@ -35,7 +76,36 @@
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 120%;
   text-align: center;
   color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 10px;
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.advantages__text br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.advantages__effect {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @bg-blocks;
+  }
 }

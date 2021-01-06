@@ -1,7 +1,17 @@
 .hero-platforms {
   display: flex;
-  margin: 0 10px;
+  width: 280px;
+  margin: 32px 0 28px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 43px 30px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 67px 30px 44px;
+  }
 }
 
 .hero-platforms__item {

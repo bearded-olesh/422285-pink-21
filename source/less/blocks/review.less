@@ -1,4 +1,6 @@
 .review {
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
@@ -9,6 +11,25 @@
   line-height: 30px;
   text-align: center;
   color: @font-heading;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    font-size: 20px;
+  }
+}
+
+.review__about-author {
+  display: none;
+  margin: 0 0 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 2;
+  }
 }
 
 .review__text {
@@ -18,4 +39,9 @@
   line-height: 30px;
   text-align: center;
   color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 36px;
+    font-size: 18px;
+  }
 }
