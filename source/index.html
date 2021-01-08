@@ -48,6 +48,12 @@
   <symbol id="icon-academy" viewBox="0 0 27 34">
     <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
   </symbol>
+  <symbol id="icon-arrow-left" viewBox="0 0 22 41">
+    <path d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z" fill="#283645"/>
+  </symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 22 41">
+    <path d="M19.9587 20.4965L0.251671 39.5856C0.171938 39.6621 0.108643 39.7532 0.065443 39.8535C0.0222435 39.9539 0 40.0616 0 40.1704C0 40.2791 0.0222435 40.3868 0.065443 40.4872C0.108643 40.5876 0.171938 40.6786 0.251671 40.7551C0.33144 40.8327 0.426224 40.8943 0.530588 40.9363C0.634953 40.9784 0.746847 41 0.859852 41C0.972857 41 1.08475 40.9784 1.18911 40.9363C1.29348 40.8943 1.38826 40.8327 1.46803 40.7551L21.7475 21.0912C21.8275 21.0138 21.891 20.9219 21.9344 20.8207C21.9777 20.7195 22 20.611 22 20.5015C22 20.3919 21.9777 20.2834 21.9344 20.1822C21.891 20.081 21.8275 19.9891 21.7475 19.9117L1.46803 0.237877C1.30326 0.0842934 1.08329 -0.00102615 0.85474 7.62939e-06C0.6861 0.00154114 0.52166 0.0511971 0.381939 0.14278C0.24222 0.234364 0.133411 0.363811 0.069088 0.51498C0.00476646 0.666149 -0.0122204 0.83234 0.0202503 0.992809C0.052721 1.15328 0.133209 1.30093 0.251671 1.41732L19.9587 20.4965Z" fill="#283645"/>
+  </symbol>
 </svg>
 
 <header class="page__header">
@@ -191,6 +197,18 @@
         </li>
       </ul>
 
+      <button class="reviews__toggle reviews__toggle--prev">
+        <svg class="arrow" width="22" height="41">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use>
+        </svg>предыдущий отзыв
+      </button>
+
+      <button class="reviews__toggle reviews__toggle--next">
+        <svg class="arrow" width="22" height="41">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+        </svg>предыдущий отзыв
+      </button>
+
       <p class="reviews__toggles slider__toggles">
         <button class="slider__toggle slider__toggle--active">1</button>
         <button class="slider__toggle">2</button>
@@ -202,12 +220,60 @@
   <section class="tariffs gray-triangle-before">
     <h2 class="visually-hidden">Тарифы приложения PINK</h2>
 
-    <div class="container slider">
+    <div class="container slider tariffs__container">
       <ul class="tariffs__list slider__list">
-        <li class="tariffs__item tarif slider__item">
+        <li class="tariffs__item tariffs__item--name tariff slider__item">
+          <div class="tariff__heading"></div>
+
+          <ul class="tariff__features-list features">
+            <li class="features__item feature feature--tablet">
+              <p class="feature__name feature__name--show-on-tab">Розовый фильтр</p>
+            </li>
+
+            <li class="features__item feature feature--tablet">
+              <p class="feature__name feature__name--show-on-tab">Смайлики</p>
+            </li>
+
+            <li class="features__item feature feature--tablet">
+              <p class="feature__name feature__name--show-on-tab">Комментарии</p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tariffs__item tariff tariff--base slider__item">
           <div class="tariff__heading">
             <b class="tariff__name">база</b>
             <p class="tariff__price">1,99 USD</p>
+          </div>
+
+          <ul class="tariff__features-list features">
+            <li class="features__item feature">
+              <p class="feature__name">Розовый фильтр</p>
+              <svg class="feature__icon feature__icon--true" width="31" height="21">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+              </svg>
+            </li>
+
+            <li class="features__item feature">
+              <p class="feature__name">Смайлики</p>
+              <svg class="feature__icon feature__icon--false" width="27" height="27">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+              </svg>
+            </li>
+
+            <li class="features__item feature">
+              <p class="feature__name">Комментарии</p>
+              <svg class="feature__icon feature__icon--false" width="27" height="27">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+              </svg>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tariffs__item tariff tariff--standart slider__item">
+          <div class="tariff__heading tariff__heading--motivator">
+            <b class="tariff__name">стандарт</b>
+            <p class="tariff__price">3,99 USD</p>
           </div>
 
           <ul class="tariff__features-list features">
@@ -234,31 +300,7 @@
           </ul>
         </li>
 
-        <li class="tariffs__item tarrif slider__item">
-          <div class="tariff__heading">
-            <b class="tariff__name">стандарт</b>
-            <p class="tariff__price">3,99 USD</p>
-          </div>
-
-          <ul class="tariff__features-list features">
-            <li class="features__item feature">
-              <p class="feature__name">Розовый фильтр</p>
-              <p class="feature__icon feature__icon--true"></p>
-            </li>
-
-            <li class="features__item feature">
-              <p class="feature__name">Смайлики</p>
-              <p class="feature__icon feature__icon--true"></p>
-            </li>
-
-            <li class="features__item feature">
-              <p class="feature__name">Комментарии</p>
-              <p class="feature__icon feature__icon--false"></p>
-            </li>
-          </ul>
-        </li>
-
-        <li class="tariffs__item tarrif slider__item">
+        <li class="tariffs__item tariff tariff--unlimit slider__item">
           <div class="tariff__heading">
             <b class="tariff__name">анлим</b>
             <p class="tariff__price">9,99 USD</p>
@@ -267,25 +309,31 @@
           <ul class="tariff__features-list features">
             <li class="features__item feature">
               <p class="feature__name">Розовый фильтр</p>
-              <p class="feature__icon feature__icon--true"></p>
+              <svg class="feature__icon feature__icon--true" width="31" height="21">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+              </svg>
             </li>
 
             <li class="features__item feature">
               <p class="feature__name">Смайлики</p>
-              <p class="feature__icon feature__icon--true"></p>
+              <svg class="feature__icon feature__icon--true" width="31" height="21">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+              </svg>
             </li>
 
             <li class="features__item feature">
               <p class="feature__name">Комментарии</p>
-              <p class="feature__icon feature__icon--false"></p>
+              <svg class="feature__icon feature__icon--true" width="31" height="21">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+              </svg>
             </li>
           </ul>
         </li>
       </ul>
 
       <p class="tariffs__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--active">1</button>
-        <button class="slider__toggle">2</button>
+        <button class="slider__toggle">1</button>
+        <button class="slider__toggle slider__toggle--active">2</button>
         <button class="slider__toggle">3</button>
       </p>
     </div>
@@ -313,7 +361,7 @@
 
         <li class="contacts__item contact">
           <b class="contact__type">Приезжайте в гости:</b>
-          <a href="#" class="contact__link">ул. Большая Конюшенная, 19/8</a>
+          <a href="#" class="contact__link">ул. Большая<br> Конюшенная, 19/8</a>
         </li>
       </ul>
     </div>

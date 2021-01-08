@@ -1,34 +1,63 @@
 .contacts {
-  padding: 47px 0 0;
+  padding: 42px 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 0 0;
+  }
 }
 
 .contacts__text {
-  margin: 0 0 45px;
+  margin: 0 0 35px;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
   color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 33px;
+    font-size: 40px;
+    line-height: 137%;
+  }
 }
 
 .contacts__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -11px;
+  }
+}
+
+.contacts__item {
+  @media (min-width: @tablet-width) {
+    flex: 1 1 50%;
+  }
+}
+
+.contacts__item:last-child {
+  @media (min-width: @tablet-width) {
+    flex-basis: 100%;
+  }
 }
 
 .contacts__map {
   display: block;
   overflow: hidden;
   height: 200px;
+  margin-top: 33px;
   position: relative;
-  background: url("../img/map.jpg") no-repeat;
-  background-size: cover;
+  background-image: url("../../img/triangle-white-map.svg"), url("../img/map.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: center -2px, center;
 
-  &::before {
-    content: url("../img/triangle-white-map.svg");
-    display: block;
-    position: absolute;
-    top: -90px;
+  @media (min-width: @tablet-width) {
+    height: 378px;
+    margin-top: -23px;
   }
 }

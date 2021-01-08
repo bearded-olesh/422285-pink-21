@@ -1,23 +1,90 @@
+.tariff {
+  flex: 1 1 100%;
+}
+
+.tariff--base .tariff__heading {
+  border: 2px solid #e5e5e5;
+  border-right: none;
+}
+
+.tariff--base .feature {
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+.tariff--standart .tariff__heading {
+  border: 2px solid #e5e5e5;
+}
+
+.tariff--standart .feature {
+  border: 2px solid #e5e5e5;
+  border-top: none;
+}
+
+.tariff--unlimit .tariff__heading {
+  border: 2px solid #e5e5e5;
+  border-left: none;
+}
+
+.tariff--unlimit .feature {
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+
 .tariff__heading {
-  padding: 19px;
+  min-height: 102px;
+  padding: 13px 15px 30px;
   background-color: @font-primary;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 83px;
+    padding: 13px 15px 10px;
+  }
+}
+
+.tariff__heading--motivator {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "хит";
+    display: block;
+    width: 100px;
+    height: 23px;
+    position: absolute;
+    top: 17px;
+    left: -23px;
+    transform: rotate(-45deg);
+    background-color: @font-secondary;
+    color: @font-on-dark;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      height: 18px;
+      left: -31px;
+      line-height: 18px;
+    }
+  }
 }
 
 .tariff__name {
   font-style: normal;
   font-weight: bold;
   line-height: 30px;
-  text-align: center;
   text-transform: uppercase;
   color: @font-on-dark;
 }
 
 .tariff__price {
+  margin: 0;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
-  text-align: center;
+  line-height: 25px;
   text-transform: uppercase;
   color: @font-on-dark;
 }
