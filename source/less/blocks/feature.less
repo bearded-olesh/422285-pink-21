@@ -12,12 +12,20 @@
     min-height: 46px;
     justify-content: center;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 60px;
+  }
 }
 
 .feature--tablet {
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
     padding: 0 20px 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px;
   }
 }
 
@@ -39,5 +47,9 @@
 .feature__name--show-on-tab {
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
   }
 }

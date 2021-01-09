@@ -3,7 +3,11 @@
   background-color: @bg-blocks;
 
   @media (min-width: @tablet-width) {
-    padding: 102px 0 17px;
+    padding: 102px 0 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 154px 0 96px;
   }
 }
 
@@ -49,4 +53,8 @@
 
 .tariffs__toggles {
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

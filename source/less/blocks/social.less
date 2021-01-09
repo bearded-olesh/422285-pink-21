@@ -5,9 +5,23 @@
   border-radius: 50%;
   border: 3px solid #e9ebec;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+    margin: -4px 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 4px;
+  }
 }
 
 .social__link {
   display: flex;
   padding-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }

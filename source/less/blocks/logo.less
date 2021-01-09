@@ -6,7 +6,28 @@
   }
 }
 
-.logo__img {
-  display: block;
-  width: 100%;
+.logo__svg--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logo__svg--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__svg--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

@@ -3,8 +3,9 @@
 }
 
 .tariff--base .tariff__heading {
-  border: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
   border-right: none;
+  border-radius: 5px 0 0 0;
 }
 
 .tariff--base .feature {
@@ -14,6 +15,7 @@
 
 .tariff--standart .tariff__heading {
   border: 2px solid #e5e5e5;
+  border-top: none;
 }
 
 .tariff--standart .feature {
@@ -22,8 +24,8 @@
 }
 
 .tariff--unlimit .tariff__heading {
-  border: 2px solid #e5e5e5;
-  border-left: none;
+  border-bottom: 2px solid #e5e5e5;
+  border-radius: 0 5px 0 0;
 }
 
 .tariff--unlimit .feature {
@@ -40,6 +42,11 @@
   @media (min-width: @tablet-width) {
     min-height: 83px;
     padding: 13px 15px 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 100px;
+    padding: 16px 15px 10px;
   }
 }
 
@@ -68,6 +75,13 @@
       left: -31px;
       line-height: 18px;
     }
+
+    @media (min-width: @desktop-width) {
+      height: 23px;
+      top: 18px;
+      left: -23px;
+      line-height: 23px;
+    }
   }
 }
 
@@ -77,6 +91,10 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @font-on-dark;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .tariff__price {
@@ -87,4 +105,8 @@
   line-height: 25px;
   text-transform: uppercase;
   color: @font-on-dark;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }

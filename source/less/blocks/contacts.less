@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     padding: 44px 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 0 0;
+  }
 }
 
 .contacts__text {
@@ -19,6 +23,11 @@
     margin: 0 0 33px;
     font-size: 40px;
     line-height: 137%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 40px;
+    font-size: 50px;
   }
 }
 
@@ -37,11 +46,19 @@
   @media (min-width: @tablet-width) {
     flex: 1 1 50%;
   }
+
+  @media (min-width: @desktop-width) {
+    flex: 1 1 33%;
+  }
 }
 
 .contacts__item:last-child {
   @media (min-width: @tablet-width) {
     flex-basis: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 33%;
   }
 }
 
@@ -59,5 +76,9 @@
   @media (min-width: @tablet-width) {
     height: 378px;
     margin-top: -23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 520px;
   }
 }
