@@ -6,6 +6,19 @@
   }
 }
 
+.logo__link {
+  color: @font-on-dark;
+
+  &:hover {
+    color: @font-secondary;
+  }
+
+  &:active .logo__svg {
+    color: @font-on-dark;
+    opacity: 0.3;
+  }
+}
+
 .logo__svg--mobile {
   @media (min-width: @tablet-width) {
     display: none;

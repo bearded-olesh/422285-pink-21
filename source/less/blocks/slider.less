@@ -27,11 +27,26 @@
   height: 6px;
   border: none;
   border-radius: 50%;
-  background-color: #bfc3c7;
+  background-color: @font-primary;
+  opacity: 0.3;
   font-size: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .slider__toggle--active {
   border: 3px solid @font-primary;
   background-color: transparent;
+  opacity: 1;
 }

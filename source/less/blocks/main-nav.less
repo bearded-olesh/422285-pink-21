@@ -42,6 +42,7 @@
   }
 
   &:active {
+    color: @font-on-dark;
     opacity: 0.3;
   }
 
@@ -71,6 +72,10 @@
 
     &:hover::before {
       border-bottom: 2px solid @font-secondary;
+    }
+
+    &:active::before {
+      border-bottom: 2px solid @font-on-dark;
     }
   }
 }

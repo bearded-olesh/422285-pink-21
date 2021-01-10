@@ -1,10 +1,24 @@
 .social {
-  width: 48px;
-  height: 48px;
-  margin: 0 7px;
-  border-radius: 50%;
-  border: 3px solid #e9ebec;
   list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  margin: 0 5px;
+  border: 3px solid fade(@font-primary, 10%);
+  border-radius: 50%;
+
+  &:hover {
+    border: 3px solid @font-primary;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   @media (min-width: @tablet-width) {
     width: 52px;
@@ -14,14 +28,5 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 4px;
-  }
-}
-
-.social__link {
-  display: flex;
-  padding-top: 4px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 0;
   }
 }

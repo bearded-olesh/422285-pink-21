@@ -1,0 +1,40 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.photo__description {
+  padding: 18px 10px 17px 17px;
+  background-color: @bg-blocks;
+  font-size: 14px;
+}
+
+.photo__autor {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.photo__autor span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  margin: 0 0 12px;
+}
+
+.photo__like {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo__like-svg {
+  margin-right: 15px;
+}

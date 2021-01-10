@@ -19,6 +19,17 @@
 }
 
 .footer__logo {
+  color: @font-primary;
+
+  &:hover {
+    color: @font-secondary;
+  }
+
+  &:active {
+    color: @font-primary;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     position: relative;
     top: -5px;
@@ -53,8 +64,24 @@
   align-items: center;
 }
 
+.footer__copyrights-link {
+  display: flex;
+  align-items: center;
+  color: @font-secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: @font-primary;
+  }
+
+  &:active {
+    color: @font-primary;
+    opacity: 0.3;
+  }
+}
+
 .footer__copyrights-text {
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

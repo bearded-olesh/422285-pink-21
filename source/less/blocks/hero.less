@@ -35,6 +35,36 @@
   }
 }
 
+.hero--inner {
+  min-height: 237px;
+  background-image: none, url("../img/back-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: none, url("../img/back-mobile-x2.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: none, url("../img/back-tablet.jpg");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+    background-image: none, url("../img/back-tablet-x2.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none, url("../img/back-desktop.jpg");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: none, url("../img/back-desktop-x2.jpg");
+  }
+}
+
+.hero--inner .hero__text {
+  margin: 34px 0 0;
+  line-height: 138%;
+}
+
 .hero__text {
   margin: 30px 0 0;
   font-style: normal;
