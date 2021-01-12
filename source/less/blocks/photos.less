@@ -6,4 +6,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+}
+
+.photos__item {
+  @media (min-width: @tablet-width) {
+    flex: 1 1 50%;
+    padding: 0 10px;
+  }
 }

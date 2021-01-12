@@ -1,6 +1,10 @@
 .panorama {
   position: relative;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .panorama__heading {
@@ -17,8 +21,67 @@
   color: @font-on-dark;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
 }
 
 .panorama img {
   width: 100%;
+}
+
+.panorama__description {
+  position: relative;
+  padding: 18px 10px 17px 17px;
+  background-color: @bg-blocks;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding: 23px 10px 13px 30px;
+  }
+}
+
+.panorama__autor {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.panorama__autor span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.panorama__text {
+  margin: 0 0 12px;
+}
+
+.panorama__like {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+}
+
+.panorama__like-svg {
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-left: 16px;
+  }
 }

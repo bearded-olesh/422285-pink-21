@@ -5,12 +5,27 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.photo__img {
+  width: 100%;
 }
 
 .photo__description {
   padding: 18px 10px 17px 17px;
   background-color: @bg-blocks;
   font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    flex: 1 1 auto;
+    min-height: 155px;
+    padding: 23px 10px 23px 30px;
+    position: relative;
+  }
 }
 
 .photo__autor {
@@ -33,8 +48,28 @@
   margin: 0;
   font-size: 12px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+    right: 30px;
+  }
+}
+
+.photo__like span {
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .photo__like-svg {
   margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-right: 0;
+  }
 }

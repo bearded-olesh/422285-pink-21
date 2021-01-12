@@ -7,4 +7,25 @@
   line-height: 30px;
   text-align: center;
   color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    padding: 91px 40px 77px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 91px 150px 89px;
+  }
+}
+
+.plain-text br:not(.plain-text__br-on-tab) {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.plain-text--bottom {
+  @media (min-width: @tablet-width) {
+    padding: 45px 40px 77px;
+  }
 }

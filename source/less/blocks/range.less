@@ -7,6 +7,10 @@
   @media (max-width: @mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .setting--crop .range {
@@ -20,15 +24,29 @@
 }
 
 .range__thumb {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   background-color: @font-on-dark;
   border: 2px solid @font-secondary;
   border-radius: 50%;
 }
 
 .setting--crop .range__thumb {
-  @media (max-width: @mobile-width-only) {
-    margin-left: 81%;
+  margin-left: 81%;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 72%;
+  }
+}
+
+.setting--fill .range__thumb {
+  @media (min-width: @tablet-width) {
+    margin-left: 12%;
+  }
+}
+
+.setting--contrast .range__thumb {
+  @media (min-width: @tablet-width) {
+    margin-left: 47%;
   }
 }
