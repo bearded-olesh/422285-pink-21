@@ -6,6 +6,11 @@
   @media (min-width: @tablet-width) {
     padding: 58px 0 55px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    background-color: transparent;
+  }
 }
 
 .post__form {
@@ -16,6 +21,12 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: stretch;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+    padding: 57px 60px 56px 80px;
+    background-color: @bg-blocks;
   }
 }
 
@@ -31,6 +42,10 @@
   @media (min-width: @tablet-width) {
     flex: 1 1 auto;
     padding-left: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 90px;
   }
 }
 
@@ -51,6 +66,12 @@
   @media (min-width: @tablet-width) {
     padding: 50px 13px 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 129px 0 0 0;
+  }
 }
 
 .post__button {
@@ -58,8 +79,25 @@
   color: @font-secondary;
   border-color: @font-secondary;
 
+  &:hover {
+    background-color: @font-secondary;
+    color: @font-on-dark;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @font-secondary;
+    color: fade(@font-on-dark, 30%);
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+    margin-bottom: 0;
   }
 }
 
@@ -67,4 +105,20 @@
   color: @font-primary;
   border-color: @font-primary;
   opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @font-primary;
+    color: fade(@font-on-dark, 30%);
+    opacity: 0.3;
+    outline: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+  }
 }

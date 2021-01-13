@@ -11,6 +11,10 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+
+  @media (min-width: @desktop-width) {
+    flex: 1 1 0%;
+  }
 }
 
 .setting--crop .range {
@@ -29,6 +33,10 @@
   background-color: @font-on-dark;
   border: 2px solid @font-secondary;
   border-radius: 50%;
+
+  &:active {
+    background-color: @font-secondary;
+  }
 }
 
 .setting--crop .range__thumb {
@@ -37,16 +45,28 @@
   @media (min-width: @tablet-width) {
     margin-left: 72%;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 24%;
+  }
 }
 
 .setting--fill .range__thumb {
   @media (min-width: @tablet-width) {
     margin-left: 12%;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 86%;
+  }
 }
 
 .setting--contrast .range__thumb {
   @media (min-width: @tablet-width) {
     margin-left: 47%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 56%;
   }
 }

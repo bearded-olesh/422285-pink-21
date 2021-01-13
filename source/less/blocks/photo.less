@@ -4,10 +4,18 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 54px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
   }
 }
 
@@ -25,6 +33,10 @@
     min-height: 155px;
     padding: 23px 10px 23px 30px;
     position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 24px 10px 23px 27px;
   }
 }
 
@@ -56,6 +68,10 @@
     bottom: 23px;
     left: 30px;
     right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 27px;
   }
 }
 
