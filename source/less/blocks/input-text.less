@@ -1,6 +1,6 @@
 .input-text {
-  padding: 20px 23px;
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   font-style: normal;
@@ -8,4 +8,25 @@
   font-size: 18px;
   line-height: 30px;
   color: @font-primary;
+
+  &:hover {
+    border-color: @font-primary;
+  }
+
+  &:focus {
+    border-color: @font-secondary;
+    outline: none;
+  }
+}
+
+.input-text--textarea {
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 193px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 128px;
+  }
 }

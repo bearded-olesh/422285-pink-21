@@ -1,0 +1,26 @@
+.apps {
+  padding: 99px 20px 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+    padding: 52px 59px 61px;
+    border: 2px solid @form-border;
+    border-radius: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 1 0 calc(50% - 35px);
+    margin-left: 35px;
+    padding: 52px 0 61px;
+  }
+}
+
+.apps__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 73px;
+  }
+}

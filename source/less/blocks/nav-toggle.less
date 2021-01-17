@@ -10,9 +10,21 @@
   border: 0;
   background-color: transparent;
 
+  &:hover .nav-toggle__stripe {
+    background-color: @font-secondary;
+  }
+
+  &:active .nav-toggle__stripe {
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.page__header--open-menu .nav-toggle {
+  align-items: flex-end;
 }
 
 .nav-toggle__stripe {
@@ -34,7 +46,7 @@
 }
 
 .page__header--open-menu .nav-toggle__stripe2 {
-  background-color: transparent;
+  display: none;
 }
 
 .page__header--open-menu .nav-toggle__stripe3 {

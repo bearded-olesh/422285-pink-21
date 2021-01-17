@@ -1,14 +1,44 @@
 .data-item {
   position: relative;
-  padding: 25px 0 34px;
+  padding: 0 0 22px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 0 0 51px;
+  }
+}
+
+.personal-data--contacts .data-item {
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+    align-items: self-start;
+    padding: 0 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 0 1 375px;
+    padding: 0 0 18px;
+  }
+}
+
+.personal-data--contacts .data-item__label {
+  @media (min-width: @tablet-width) {
+    padding: 13px 0 0 20px;
+  }
 }
 
 .data-item__label {
-  padding: 17px 20px;
+  display: block;
+  padding: 0 0 10px 23px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 30px;
+  line-height: normal;
   text-transform: uppercase;
   color: @font-secondary;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 19px 0 0;
+  }
 }
