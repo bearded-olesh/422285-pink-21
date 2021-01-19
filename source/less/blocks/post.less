@@ -94,6 +94,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    width: 260px;
     margin-bottom: 24px;
   }
 
@@ -104,6 +105,8 @@
 }
 
 .post__button--disabled {
+  width: 280px;
+  height: 55px;
   color: @font-primary;
   border-color: @font-primary;
   opacity: 0.1;
@@ -118,6 +121,10 @@
     color: fade(@font-on-dark, 30%);
     opacity: 0.3;
     outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
   }
 
   @media (min-width: @desktop-width) {
