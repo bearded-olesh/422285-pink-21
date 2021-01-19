@@ -43,12 +43,22 @@
 }
 
 .contacts__item {
+  margin-bottom: 19px;
+
   @media (min-width: @tablet-width) {
     flex: 1 1 50%;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
     flex: 1 1 33%;
+    margin-bottom: 24px;
+  }
+}
+
+.contacts__item--mail {
+  @media (min-width: @desktop-width) {
+    order: 2;
   }
 }
 
