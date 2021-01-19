@@ -8,17 +8,7 @@
   border-radius: 5px 0 0 0;
 }
 
-.tariff--base .feature {
-  border-bottom: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
-}
-
 .tariff--standart .tariff__heading {
-  border: 2px solid #e5e5e5;
-  border-top: none;
-}
-
-.tariff--standart .feature {
   border: 2px solid #e5e5e5;
   border-top: none;
 }
@@ -26,11 +16,6 @@
 .tariff--unlimit .tariff__heading {
   border-bottom: 2px solid #e5e5e5;
   border-radius: 0 5px 0 0;
-}
-
-.tariff--unlimit .feature {
-  border-bottom: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
 }
 
 .tariff__heading {
@@ -56,19 +41,19 @@
 
   &::before {
     content: "хит";
-    display: block;
     width: 100px;
     height: 23px;
     position: absolute;
     top: 17px;
     left: -23px;
+    display: block;
     transform: rotate(-45deg);
-    background-color: @font-secondary;
-    color: @font-on-dark;
     font-size: 14px;
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
+    color: @font-on-dark;
+    background-color: @font-secondary;
 
     @media (min-width: @tablet-width) {
       height: 18px;
