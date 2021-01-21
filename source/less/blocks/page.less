@@ -37,3 +37,30 @@
     min-height: 110px;
   }
 }
+
+.page__modal {
+  width: 460px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.page__modal--error {
+  top: 909px;
+
+  @media (min-width: @desktop-width) {
+    top: 819px;
+  }
+}
+
+.page__modal--success {
+  top: 1383px;
+
+  @media (min-width: @desktop-width) {
+    top: 1275px;
+  }
+}

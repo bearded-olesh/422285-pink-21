@@ -1,13 +1,13 @@
 .panorama {
   position: relative;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 49px;
+    padding-bottom: 49px;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.panorama img {
+.panorama__img {
   width: 100%;
 }
 
@@ -61,7 +61,7 @@
   font-weight: bold;
 }
 
-.panorama__autor span {
+.panorama__autor-was {
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
@@ -71,7 +71,7 @@
   margin: 0 0 12px;
 }
 
-.panorama__text br {
+.panorama__br-on-mob {
   @media (min-width: @tablet-width) {
     display: none;
   }

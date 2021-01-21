@@ -1,8 +1,8 @@
 .hero {
+  position: relative;
   display: flex;
   min-height: 733px;
   padding-top: 60px;
-  position: relative;
   background-color: #203548;
   background-image: url("../img/hero-phone-mobile.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat no-repeat;
@@ -99,5 +99,17 @@
     padding: 100px 30px 0;
     font-size: 50px;
     line-height: 136%;
+  }
+}
+
+.hero__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 300px;
   }
 }

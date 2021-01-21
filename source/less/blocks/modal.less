@@ -1,32 +1,8 @@
 .modal {
   display: none;
-  width: 460px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: @bg-body;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
-
-  @media (min-width: @desktop-width) {
-    width: 780px;
-  }
-}
-
-.modal--error {
-  top: 909px;
-
-  @media (min-width: @desktop-width) {
-    top: 819px;
-  }
-}
-
-.modal--success {
-  top: 1383px;
-
-  @media (min-width: @desktop-width) {
-    top: 1275px;
-  }
 }
 
 .modal--shown {
@@ -91,8 +67,8 @@
 }
 
 .modal--success .modal__footer {
-  background-color: @bg-blocks;
   padding: 50px 0 54px;
+  background-color: @bg-blocks;
 }
 
 .modal__button {

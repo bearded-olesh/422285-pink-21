@@ -20,13 +20,14 @@
 }
 
 .input-text--textarea {
-  height: 200px;
+  min-height: 200px;
+  resize: vertical;
 
   @media (min-width: @tablet-width) {
-    height: 193px;
+    min-height: 193px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 128px;
+    min-height: 128px;
   }
 }

@@ -15,12 +15,22 @@
 }
 
 .photos__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 54px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     flex: 1 1 50%;
+    margin-bottom: 20px;
     padding: 0 10px;
   }
 
   @media (min-width: @desktop-width) {
     flex: 1 1 33%;
+    margin-bottom: 54px;
   }
 }

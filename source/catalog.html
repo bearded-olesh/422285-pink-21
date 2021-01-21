@@ -87,10 +87,10 @@
   </symbol>
 </svg>
 
-<header class="page__header">
+<header class="page__header header">
   <div class="container page__header-container">
     <div class="logo">
-      <a href="index.html" class="logo__link" title="Pink">
+      <a href="#" class="logo__link" title="Pink">
         <svg width="74" height="23" class="logo__svg logo__svg--mobile">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-header-mobile"></use>
         </svg>
@@ -105,18 +105,18 @@
       </a>
     </div>
 
-    <ul class="main-nav">
+    <ul class="header__nav main-nav main-nav--">
       <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
       <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Фотографии</a></li>
       <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
       <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
     </ul>
 
-    <button class="nav-toggle">
+    <button class="header__toggle nav-toggle">
       <span class="visually-hidden">Открыть меню</span>
-      <span class="nav-toggle__stripe nav-toggle__stripe1"></span>
-      <span class="nav-toggle__stripe nav-toggle__stripe2"></span>
-      <span class="nav-toggle__stripe nav-toggle__stripe3"></span>
+      <span class="header__toggle-stripe header__toggle-stripe1 nav-toggle__stripe"></span>
+      <span class="header__toggle-stripe header__toggle-stripe2 nav-toggle__stripe"></span>
+      <span class="header__toggle-stripe header__toggle-stripe3 nav-toggle__stripe"></span>
     </button>
   </div>
 </header>
@@ -133,24 +133,24 @@
   </section>
 
   <div class="container">
-    <p class="plain-text">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
+    <p class="plain-text">Взгляните на фотографии, которые выкладывают пользователи!<br class="plain-text__br-on-mob"> Видите, как не хватает ваших?</p>
   </div>
 
   <section class="panorama">
     <h2 class="panorama__heading">Панорама дня</h2>
 
     <picture>
-      <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg, img/panorama-desktop-x2.jpg 2.0x">
-      <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg, img/panorama-desktop-x2.jpg 2.0x">
-      <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile-x2.jpg 2.0x" alt="Панорама">
+      <source class="panorama__img" media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg, img/panorama-desktop-x2.jpg 2.0x">
+      <source class="panorama__img" media="(min-width: 660px)" srcset="img/panorama-tablet.jpg, img/panorama-desktop-x2.jpg 2.0x">
+      <img class="panorama__img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile-x2.jpg 2.0x" alt="Панорама">
     </picture>
 
     <div class="container">
       <div class="panorama__description">
         <p class="panorama__autor">
-          Анна <span>(5 минут назад)</span>
+          Анна <span class="panorama__autor-was">(5 минут назад)</span>
         </p>
-        <p class="panorama__text">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую<br class="panorama__br-on-tab"> трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="panorama__text">Прыгать или нет? Напишите в комментарии свой совет и<br class="panorama__br-on-mob"> смотрите прямую<br class="panorama__br-on-tab"> трансляцию в перископе, задавайте свои вопросы!</p>
         <p class="panorama__like">
           <svg width="13" height="12" class="photo__like-svg panorama__like-svg">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#like"></use>

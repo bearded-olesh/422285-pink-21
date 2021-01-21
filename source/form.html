@@ -68,10 +68,10 @@
   </symbol>
 </svg>
 
-<header class="page__header">
+<header class="page__header header">
   <div class="container page__header-container">
     <div class="logo">
-      <a href="index.html" class="logo__link" title="Pink">
+      <a href="#" class="logo__link" title="Pink">
         <svg width="74" height="23" class="logo__svg logo__svg--mobile">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-header-mobile"></use>
         </svg>
@@ -86,18 +86,18 @@
       </a>
     </div>
 
-    <ul class="main-nav">
+    <ul class="header__nav main-nav main-nav--">
       <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
       <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
       <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Конкурс</a></li>
       <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
     </ul>
 
-    <button class="nav-toggle">
+    <button class="header__toggle nav-toggle">
       <span class="visually-hidden">Открыть меню</span>
-      <span class="nav-toggle__stripe nav-toggle__stripe1"></span>
-      <span class="nav-toggle__stripe nav-toggle__stripe2"></span>
-      <span class="nav-toggle__stripe nav-toggle__stripe3"></span>
+      <span class="header__toggle-stripe header__toggle-stripe1 nav-toggle__stripe"></span>
+      <span class="header__toggle-stripe header__toggle-stripe2 nav-toggle__stripe"></span>
+      <span class="header__toggle-stripe header__toggle-stripe3 nav-toggle__stripe"></span>
     </button>
   </div>
 </header>
@@ -125,7 +125,7 @@
 
     <div class="container">
       <form action="https://echo.htmlacademy.ru" class="form">
-        <fieldset class="form__fieldset form__personal-data personal-data personal-data--name">
+        <fieldset class="form__fieldset form__name personal-data">
           <legend class="visually-hidden">Персональные данные</legend>
 
           <ul class="personal-data__list">
@@ -147,7 +147,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--gray form__achievements achievements">
-          <legend class="form__heading">Ваши безбашенные<br> достижения в путешествии</legend>
+          <legend class="form__heading">Ваши безбашенные<br class="form__heading-br"> достижения в путешествии</legend>
 
           <ul class="achievements__list">
             <li class="achievements__item field">
@@ -182,16 +182,16 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset form__personal-data personal-data personal-data--contacts">
+        <fieldset class="form__fieldset form__contacts personal-data">
           <legend class="form__heading">Контактная информация</legend>
 
           <ul class="personal-data__list">
-            <li class="personal-data__item personal-data__item--phone data-item">
+            <li class="personal-data__item personal-data__item--phone data-item data-item--phone">
               <label class="data-item__label" for="personal-data4">Номер телефона</label>
               <input class="data-item__input input-text" type="text" id="personal-data4" name="phone" placeholder="Номер, пожалуйста">
             </li>
 
-            <li class="personal-data__item personal-data__item--email data-item">
+            <li class="personal-data__item personal-data__item--email data-item data-item--email">
               <label class="data-item__label" for="personal-data5">Адрес почты</label>
               <input class="data-item__input input-text" type="email" id="personal-data5" name="email" placeholder="Введите почту *">
             </li>
@@ -220,7 +220,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__emotions">
-          <legend class="form__heading">Опишите свои эмоции</legend>
+          <legend class="form__heading form__heading--emotions">Опишите свои эмоции</legend>
 
           <label class="visually-hidden" for="emotions"></label>
           <textarea class="input-text input-text--textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -228,7 +228,7 @@
 
         <button type="submit" class="button form__button">Отправить форму</button>
 
-        <p class="form__legend"><span>*</span> — обязательные поля</p>
+        <p class="form__legend"><span class="form__legend--star">*</span> — обязательные поля</p>
         <p class="form__legend form__legend--desktop"><span>*</span> — обязательные для заполнения поля</p>
       </form>
     </div>
@@ -284,7 +284,7 @@
   </div>
 </footer>
 
-<article class="modal modal--error modal--shown">
+<article class="page__modal page__modal--error modal modal--shown">
   <div class="modal__body">
     <h3 class="modal__heading">Что-то пошло
       не так!</h3>
@@ -295,7 +295,7 @@
   </div>
 </article>
 
-<article class="modal modal--success modal--shown">
+<article class="page__modal page__modal--success modal modal--shown">
   <div class="modal__body">
     <h3 class="modal__heading">Ваша заявка
       отправлена</h3>

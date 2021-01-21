@@ -9,20 +9,8 @@
   }
 }
 
-.personal-data--contacts .data-item {
-  @media (min-width: @tablet-width) {
-    flex-direction: column-reverse;
-    align-items: self-start;
-    padding: 0 0 35px;
-  }
-
-  @media (min-width: @desktop-width) {
-    flex: 0 1 375px;
-    padding: 0 0 18px;
-  }
-}
-
-.personal-data--contacts .data-item__label {
+.data-item--contacts .data-item__label,
+.data-item--email .data-item__label {
   @media (min-width: @tablet-width) {
     padding: 13px 0 0 20px;
   }

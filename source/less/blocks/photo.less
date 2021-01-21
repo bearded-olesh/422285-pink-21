@@ -1,22 +1,6 @@
 .photo {
   display: flex;
   flex-direction: column;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-
-    @media (min-width: @desktop-width) {
-      margin-bottom: 54px;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 54px;
-  }
 }
 
 .photo__img {
@@ -29,10 +13,10 @@
   font-size: 14px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     flex: 1 1 auto;
     min-height: 155px;
     padding: 23px 10px 23px 30px;
-    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -62,12 +46,12 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    align-items: center;
     position: absolute;
     bottom: 23px;
     left: 30px;
     right: 30px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {

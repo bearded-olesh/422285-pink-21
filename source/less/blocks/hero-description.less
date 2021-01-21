@@ -1,8 +1,4 @@
 .hero-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 28px 20px 30px;
   background: @bg-hero;
 
@@ -13,9 +9,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 300px;
     padding: 28px 0 38px;
-    position: relative;
     background-color: transparent;
   }
 
@@ -54,6 +48,20 @@
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
+  }
+}
+
+.hero-description__platforms {
+  width: 280px;
+  margin: 34px 0 14px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 46px 30px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 67px 30px 44px;
   }
 }
 

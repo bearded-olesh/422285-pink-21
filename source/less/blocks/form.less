@@ -4,13 +4,12 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 0 49px;
+    padding: 0 0 49px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
     padding: 31px 0 0;
   }
 }
@@ -58,9 +57,22 @@
   }
 }
 
-.form__heading br {
+.form__heading-br {
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.form__name {
+  @media (min-width: @tablet-width) {
+    order: 1;
+    padding: 32px 0 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 1 0 calc(50% - 35px);
+    margin-right: 35px;
+    padding: 15px 0 6px;
   }
 }
 
@@ -79,9 +91,30 @@
   }
 }
 
+.form__contacts {
+  padding: 37px 0 2px;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    margin: 0 0 57px;
+    padding: 35px 57px 2px;
+    border: 2px solid @form-border;
+    border-radius: 1px;
+  }
+}
+
+.form__contacts .form__heading {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .form__apps {
   @media (min-width: @tablet-width) {
     order: 2;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
@@ -106,7 +139,7 @@
   }
 }
 
-.form__emotions .form__heading {
+.form__heading--emotions {
   top: 38px;
 
   @media (min-width: @tablet-width) {
@@ -165,7 +198,7 @@
   }
 }
 
-.form__legend span {
+.form__legend--star {
   color: @font-secondary;
 }
 
