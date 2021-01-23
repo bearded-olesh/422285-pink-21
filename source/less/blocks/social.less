@@ -11,13 +11,15 @@
   margin: 0 5px;
   border: 3px solid fade(@font-primary, 10%);
   border-radius: 50%;
+  color: @font-secondary;
 
   &:hover {
     border: 3px solid @font-primary;
   }
 
   &:active {
-    opacity: 0.1;
+    color: fade(@font-secondary, 10%);
+    border: 3px solid @font-primary;
   }
 
   @media (min-width: @tablet-width) {
