@@ -90,7 +90,7 @@
 <header class="page__header header">
   <div class="container page__header-container">
     <div class="logo">
-      <a href="#" class="logo__link" title="Pink">
+      <a href="index.html" class="logo__link" title="Pink">
         <svg width="74" height="23" class="logo__svg logo__svg--mobile">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-header-mobile"></use>
         </svg>
@@ -105,18 +105,18 @@
       </a>
     </div>
 
-    <ul class="header__nav main-nav main-nav--">
-      <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-      <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Фотографии</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+    <ul class="header__nav main-nav">
+      <li class="main-nav__item"><a class="header__nav-link main-nav__link" href="index.html">Главная</a></li>
+      <li class="main-nav__item"><a class="header__nav-link main-nav__link main-nav__link--active">Фотографии</a></li>
+      <li class="main-nav__item"><a class="header__nav-link main-nav__link" href="form.html">Конкурс</a></li>
+      <li class="main-nav__item"><a class="header__nav-link main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
     </ul>
 
     <button class="header__toggle nav-toggle">
       <span class="visually-hidden">Открыть меню</span>
-      <span class="header__toggle-stripe header__toggle-stripe1 nav-toggle__stripe"></span>
-      <span class="header__toggle-stripe header__toggle-stripe2 nav-toggle__stripe"></span>
-      <span class="header__toggle-stripe header__toggle-stripe3 nav-toggle__stripe"></span>
+      <span class="header__toggle-stripe header__toggle-stripe--1 nav-toggle__stripe"></span>
+      <span class="header__toggle-stripe header__toggle-stripe--2 nav-toggle__stripe"></span>
+      <span class="header__toggle-stripe header__toggle-stripe--3 nav-toggle__stripe"></span>
     </button>
   </div>
 </header>
@@ -299,7 +299,7 @@
     <p class="plain-text plain-text--bottom">Затмите их всех!<br class="plain-text__br-on-tab"> Выкладывайте все, что накопилось в телефоне!</p>
   </div>
 
-  <section class="post">
+  <section class="page__post post">
     <h2 class="visually-hidden">Запостить фотографию</h2>
 
     <div class="container">
@@ -319,7 +319,7 @@
                 </svg>
               </label>
 
-              <div class="setting__range range">
+              <div class="setting__range range range--crop">
                 <div class="range__thumb"></div>
               </div>
 
@@ -333,7 +333,7 @@
                 </svg>
               </label>
 
-              <div class="setting__range range">
+              <div class="setting__range range range--fill">
                 <div class="range__thumb"></div>
               </div>
 
@@ -347,7 +347,7 @@
                 </svg>
               </label>
 
-              <div class="setting__range range">
+              <div class="setting__range range range--contrast">
                 <div class="range__thumb"></div>
               </div>
 

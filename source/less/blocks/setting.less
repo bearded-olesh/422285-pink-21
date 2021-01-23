@@ -2,7 +2,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
     padding: 5px 17px 20px 0;
     border-bottom: 1px solid fade(@font-primary, 10%);
   }
@@ -13,11 +12,11 @@
 }
 
 .setting__label {
-  width: 50px;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
 
   @media (min-width: @tablet-width) {
     width: 30px;
@@ -60,6 +59,16 @@
   @media (min-width: @desktop-width) {
     width: auto;
     height: auto;
+  }
+}
+
+.setting--crop .setting__range {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    position: absolute;
+    top: 125px;
+    left: 20px;
+    right: 20px;
   }
 }
 
