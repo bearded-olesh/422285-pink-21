@@ -1,0 +1,32 @@
+.data-item {
+  position: relative;
+  padding: 0 0 22px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 0 0 51px;
+  }
+}
+
+.data-item--phone .data-item__label,
+.data-item--email .data-item__label {
+  @media (min-width: @tablet-width) {
+    padding: 13px 0 0 20px;
+  }
+}
+
+.data-item__label {
+  display: block;
+  padding: 0 0 10px 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: @font-secondary;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 19px 0 0;
+  }
+}

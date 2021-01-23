@@ -1,9 +1,13 @@
 .hero-platforms {
   display: flex;
-  margin: 0;
-  padding: 0;
+  padding: 0 21px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .hero-platforms__item {
   list-style: none;
+  margin: auto;
 }

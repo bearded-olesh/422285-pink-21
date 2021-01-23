@@ -1,13 +1,55 @@
 .feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 0 20px;
   list-style: none;
+  background-color: @font-on-dark;
+  border-top: none;
+
+  @media (min-width: @tablet-width) {
+    min-height: 46px;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 60px;
+  }
+}
+
+.feature--tablet {
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+    padding: 0 20px 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px;
+  }
 }
 
 .feature__name {
-  padding: 20px;
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+    text-transform: none;
+  }
+}
+
+.feature__name--show-on-tab {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }

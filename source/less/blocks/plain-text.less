@@ -1,0 +1,59 @@
+.plain-text {
+  margin: 0;
+  padding: 44px 0 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    padding: 91px 40px 77px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 91px 150px 89px;
+  }
+}
+
+.plain-text__br-on-mob {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.plain-text--bottom {
+  @media (min-width: @tablet-width) {
+    padding: 45px 40px 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 3px 40px 77px;
+  }
+}
+
+.plain-text--form {
+  padding: 44px 0 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 91px 30px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 91px 70px 40px;
+  }
+}
+
+.plain-text--form .plain-text__span {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}

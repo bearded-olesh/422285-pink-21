@@ -1,5 +1,8 @@
 .contact {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .contact__type {
@@ -7,8 +10,15 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
   color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .contact__link {
@@ -16,7 +26,25 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  text-align: center;
   text-decoration: none;
   color: @font-secondary;
+
+  &:hover {
+    color: @font-primary;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @font-primary;
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
+
+.contact__link-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

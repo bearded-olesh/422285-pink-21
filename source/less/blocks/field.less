@@ -1,0 +1,65 @@
+.field:not(:last-child) {
+  margin-bottom: 58px;
+}
+
+.field__label {
+  position: relative;
+  display: block;
+  padding-left: 59px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+  color: @font-primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    background: @font-on-dark;
+    border: 2px solid @form-border;
+  }
+
+  &:hover::before {
+    border-color: @font-primary;
+  }
+
+  &:active::before {
+    border-color: @font-secondary;
+  }
+}
+
+.field__label--radio {
+  padding-left: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.field__checkbox,
+.field__radio {
+  display: none;
+}
+
+.field__radio + .field__label::before {
+  border-radius: 50%;
+}
+
+.field__checkbox:checked + .field__label::before,
+.field__radio:checked + .field__label::before {
+  background-color: @font-on-dark;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.field__checkbox:checked + .field__label::before {
+  background-image: url("../img/tick.svg");
+}
+
+.field__radio:checked + .field__label::before {
+  background-image: url("../img/ellipse.svg");
+}

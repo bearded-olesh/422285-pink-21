@@ -1,0 +1,40 @@
+.achievements__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 316px 295px auto;
+  }
+}
+
+.achievements__item:nth-child(2) {
+  @media (min-width: @desktop-width) {
+    order: 4;
+  }
+}
+
+.achievements__item:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+
+.achievements__item:nth-child(4) {
+  @media (min-width: @desktop-width) {
+    order: 5;
+  }
+}
+
+.achievements__item:nth-child(5) {
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.achievements__item:nth-child(6) {
+  @media (min-width: @desktop-width) {
+    order: 6;
+  }
+}

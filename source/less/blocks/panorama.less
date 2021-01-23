@@ -1,0 +1,114 @@
+.panorama {
+  position: relative;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 49px;
+  }
+}
+
+.panorama__heading {
+  width: 140px;
+  height: 36px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 1;
+  background: @font-secondary;
+  font-size: 12px;
+  line-height: 36px;
+  color: @font-on-dark;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
+}
+
+.panorama__img {
+  width: 100%;
+}
+
+.panorama__description {
+  position: relative;
+  padding: 18px 10px 17px 17px;
+  background-color: @bg-blocks;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding: 23px 10px 13px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 10px 13px 27px;
+  }
+}
+
+.panorama__autor {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.panorama__autor-was {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.panorama__text {
+  margin: 0 0 12px;
+}
+
+.panorama__br-on-mob {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.panorama__br-on-tab {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.panorama__like {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: @font-secondary;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+}
+
+.panorama__like-svg {
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-left: 16px;
+  }
+}

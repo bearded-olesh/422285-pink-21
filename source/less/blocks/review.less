@@ -1,5 +1,11 @@
 .review {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 80px;
+  }
 }
 
 .review__author {
@@ -9,6 +15,34 @@
   line-height: 30px;
   text-align: center;
   color: @font-heading;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.review__about-author {
+  display: none;
+  margin: 0 0 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 2px 0 35px;
+    font-size: 18px;
+  }
 }
 
 .review__text {
@@ -18,4 +52,9 @@
   line-height: 30px;
   text-align: center;
   color: @font-primary;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 36px;
+    font-size: 18px;
+  }
 }
