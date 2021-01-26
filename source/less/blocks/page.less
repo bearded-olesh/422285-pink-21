@@ -13,10 +13,64 @@
 }
 
 .page__header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: @bg-header;
+  transition: 0.3s;
+}
+
+.page__header--open-menu {
+  background-color: @font-primary;
 }
 
 .page__header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+}
+
+.page__reviews {
+  @media (min-width: @desktop-width) {
+    margin-bottom: -11px;
+  }
+}
+
+.page__post {
+  margin-top: -9px;
+}
+
+.page__modal {
+  width: 460px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.page__modal--error {
+  top: 909px;
+
+  @media (min-width: @desktop-width) {
+    top: 819px;
+  }
+}
+
+.page__modal--success {
+  top: 1383px;
+
+  @media (min-width: @desktop-width) {
+    top: 1275px;
+  }
 }

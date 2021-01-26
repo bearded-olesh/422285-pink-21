@@ -1,0 +1,76 @@
+.effect {
+  padding: 96px 0 40px 310px;
+  background-image: url("../img/clock-tablet.png");
+  background-repeat: no-repeat;
+  background-position: left 55px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/clock-tablet-x2.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 119px 0 114px 370px;
+    background-image: url("../img/clock-desktop.png");
+    background-position: left 27px;
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/clock-desktop-x2.png");
+  }
+}
+
+.effect__heading {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: @font-heading;
+}
+
+.effect__heading-br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect__text {
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+
+  @media (min-width: @desktop-width) {
+    margin: 21px 0 33px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__br-tablet {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect__br-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.effect__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @font-secondary;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}

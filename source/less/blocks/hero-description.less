@@ -1,8 +1,27 @@
 .hero-description {
+  padding: 28px 20px 30px;
   background: @bg-hero;
+
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 28px 0 38px;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 33px 0 38px;
+  }
 }
 
 .hero-description__button {
+  width: 280px;
+  display: block;
+  padding: 16px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -12,4 +31,52 @@
   border: 3px solid @font-on-dark;
   border-radius: 29px;
   text-decoration: none;
+
+  &:hover {
+    background-color: @font-on-dark;
+    color: @font-secondary;
+  }
+
+  &:active {
+    background-color: @font-on-dark;
+    color: fade(@font-secondary, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.hero-description__platforms {
+  width: 280px;
+  margin: 34px 0 14px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 46px 30px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 67px 30px 44px;
+  }
+}
+
+.hero-description__text {
+  width: 280px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @font-on-dark;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 100%;
+  }
 }

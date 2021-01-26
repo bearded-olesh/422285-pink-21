@@ -1,0 +1,134 @@
+.post {
+  padding: 20px 0;
+  background-color: @bg-blocks;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 0 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.post__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+    padding: 57px 60px 56px 80px;
+    background-color: @bg-blocks;
+  }
+}
+
+.post__settings {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post__settings-container {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    flex: 1 1 auto;
+    padding-left: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 90px;
+  }
+}
+
+.post__separator {
+  height: 1px;
+  margin: 0 -20px;
+  background: @font-primary;
+  opacity: 0.1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.post__buttons {
+  padding: 37px 0 23px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 13px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 129px 0 0 0;
+  }
+}
+
+.post__button {
+  width: 280px;
+  height: 55px;
+  margin-bottom: 10px;
+  color: @font-secondary;
+  border-color: @font-secondary;
+
+  &:hover {
+    background-color: @font-secondary;
+    color: @font-on-dark;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @font-secondary;
+    color: fade(@font-on-dark, 30%);
+    outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+    margin-bottom: 0;
+  }
+}
+
+.post__button--disabled {
+  width: 280px;
+  height: 55px;
+  color: @font-primary;
+  border-color: @font-primary;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+    color: @font-primary;
+    background-color: @bg-blocks;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @font-primary;
+    color: fade(@font-on-dark, 30%);
+    opacity: 0.3;
+    outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+  }
+}

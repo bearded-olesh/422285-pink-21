@@ -1,0 +1,102 @@
+.modal {
+  display: none;
+  background-color: @bg-body;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+}
+
+.modal--shown {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.modal__body {
+  padding: 41px 49px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 39px 49px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 39px 49px 63px;
+  }
+}
+
+.modal--success .modal__body {
+  padding: 41px 49px 30px;
+
+  @media (min-width: @desktop-width) {
+    padding: 41px 49px 39px;
+  }
+}
+
+.modal__heading {
+  margin: 0;
+  padding: 0 60px 22px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: @font-heading;
+}
+
+.modal__text {
+  margin: 0;
+  padding: 0 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: @font-primary;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 150px;
+  }
+}
+
+.modal__footer {
+  padding: 33px 0 54px;
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 0;
+    background-color: @bg-blocks;
+  }
+}
+
+.modal--success .modal__footer {
+  padding: 50px 0 54px;
+  background-color: @bg-blocks;
+}
+
+.modal__button {
+  width: 280px;
+  height: 63px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 3px;
+  background-color: fade(@bg-form-btn, 80%);
+  color: @font-on-dark;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: @bg-form-btn;
+  }
+
+  &:active {
+    color: fade(@font-on-dark, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 10;
+    width: 300px;
+  }
+}
+
+.modal--success .modal__button {
+  @media (min-width: @desktop-width) {
+    width: 460px;
+  }
+}
